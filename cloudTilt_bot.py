@@ -43,6 +43,8 @@ def get_shoe_color(url):
         return "Black Ivory"
     elif url == CLOUDTILT_QUARTZ_PEARL_URL:
         return "Quartz Pearl"
+    elif url == CLOUDTILT_BLACK_IVORY_URL2:
+        return "Black Ivory"
     else:
         return "Unknown Color"
 
@@ -98,7 +100,7 @@ def check_sizes_availability(url):
                     sizes_to_check[element_value] = status
 
         # Add results to the output list
-        results.append(f"Shoe Color: {shoe_color}")
+        results.append(f"Cloudtilt: {shoe_color}")
         for size, status in sizes_to_check.items():
             if status == "In Stock":
                 results.append(f"  Size {size}: {status} ({url})")
