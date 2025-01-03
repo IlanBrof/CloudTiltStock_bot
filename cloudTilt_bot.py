@@ -78,7 +78,7 @@ def check_sizes_availability(url):
             EC.presence_of_all_elements_located((By.XPATH, xpath_query))
         )
 
-        sizes_to_check = {"42.5": "Unknown", "43": "Unknown"}
+        sizes_to_check = {"42.5": "Not found", "43": "Not found"}
 
         # Define class-to-status mapping
         class_status_mapping = {
